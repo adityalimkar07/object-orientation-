@@ -37,7 +37,7 @@ def detect_and_match_feature(image1_path, image2_path):
     gray2 = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)
 
     # Perform template matching
-    result = cv.matchTemplate(gray2, template, cv.TM_SQDIFF_NORMED)
+    result = cv.matchTemplate(gray2, template, cv.TM_CCOEFF_NORMED)
     min_val, max_val, min_loc, max_loc = cv.minMaxLoc(result)
     top_left = max_loc
     bottom_right = (top_left[0] + template.shape[1], top_left[1] + template.shape[0])
