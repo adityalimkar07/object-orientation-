@@ -75,7 +75,7 @@ cropped_image = image.crop((left, top, right, bottom))
 # Save the cropped test image
 cropped_image.save("cropped_testimage.jpg")
 
-#After this you can use 3 options to detect angular displacement
+#You have 3 options to detect angular displacement
 # 1. Circle.py      2. FLANN.py      3. tempmatch.py
 # Circle.py inspired from canny's method works quite good when object is facing upward (convention for direction of object is explained in the pdf)
 # FLANN works quite good
