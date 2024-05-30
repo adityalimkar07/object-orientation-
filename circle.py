@@ -68,7 +68,7 @@ def draw_circles(image, circles):
 
         cv2.circle(image, (x, y), 2, (0, 0, 255), 3)
 
-# Load the template image
+# Load the cropped template image
 image = cv2.imread('cropped_templateimage.jpg')
 
 min_radius = 55  # Adjust based on expected circle size
@@ -90,7 +90,7 @@ cv2.imshow('Detected Circle', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-# Load the test image
+# Load the cropped test image
 image = cv2.imread('cropped_testimage.jpg')
 
 min_radius = 55  # Adjust based on expected circle size
